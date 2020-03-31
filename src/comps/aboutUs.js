@@ -51,7 +51,7 @@ const AboutUs = () => {
     <div className="simple-trans-main" onClick={onClick}>
       {transitions.map(({ item, props, key }) => {
         const Page = pages[item];
-        return <Page key={key} style={props} />;
+        return <Page key={key} style={props} style={{ overflow: "hidden" }} />;
       })}
     </div>
   );

@@ -28,10 +28,16 @@ class OrderForm extends Component {
     email: "",
     pin: "",
     addrss: "",
-    user: []
+    user: [],
+
+    seek: ""
   };
   onChange = e => {
     this.setState({ [e.target.name]: e.target.value });
+  };
+  onChangeSeek = e => {
+    this.setState({ [e.target.name]: e.target.value });
+    this.setState({});
   };
   onAmount = e => {
     this.setState({ [e.target.name]: e.target.value });
@@ -122,14 +128,23 @@ class OrderForm extends Component {
                 <Col sm={{ size: 12, offset: 0 }}>
                   <Input
                     type="text"
-                    name="select"
+                    name="seek"
                     id="exampleSelect"
                     placeholder="zB. Tony Balloni Totally Mine 2020 ..."
+                    onChange={this.onChangeSeek}
                     style={{ marginBottom: "1em" }}
                   />
                 </Col>
-                <Col sm={{ size: 12 }}>
-                  <Button style={{ width: "100%" }}>Scentral Duftsuche</Button>
+                <Col>
+                  <Button
+                    tag="a"
+                    style={{ width: "100%" }}
+                    href={`https://api.whatsapp.com/send?phone=+4917664085283&text=${this.state.seek}&source=&data=web`}
+                    target="_blank"
+                  >
+                    Whatsapp
+                  </Button>
+                  <Button style={{ width: "100%" }}>Email</Button>
                 </Col>
               </FormGroup>
             </Form>

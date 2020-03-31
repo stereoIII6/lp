@@ -41,10 +41,14 @@ const TopMenu = props => {
                 Kontakt
               </DropdownToggle>
               <DropdownMenu right>
-                <DropdownItem>Rufen Sie Uns an !</DropdownItem>
-                <DropdownItem>Schreiben Sie uns per WhatsApp</DropdownItem>
+                <DropdownItem href="+49">Rufen Sie Uns an !</DropdownItem>
+                <DropdownItem href="https://api.whatsapp.com/send?phone=+4917664085283&text=web&source=&data=web">
+                  Schreiben Sie uns per WhatsApp
+                </DropdownItem>
                 <DropdownItem divider />
-                <DropdownItem>Schreiben Sie uns eine eMail</DropdownItem>
+                <DropdownItem href="info@leparfumberlin.de">
+                  Schreiben Sie uns eine eMail
+                </DropdownItem>
               </DropdownMenu>
             </UncontrolledDropdown>
           </Nav>

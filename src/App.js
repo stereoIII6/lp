@@ -15,7 +15,7 @@ import {
 import OrderForm from "./comps/orderForm";
 function App() {
   return (
-    <div style={{ width: "100%", height: "100%", overflow: "auto" }}>
+    <div style={{ w_idth: "100%", height: "100%", overflow: "auto" }}>
       <TopMenu style={{ position: "relative", top: 0, zIndex: 10 }} />
 
       <div
@@ -25,7 +25,7 @@ function App() {
           height: "400px",
           margin: 0,
           padding: 0,
-          overflow: "hidden"
+          overflow: "h_idden"
         }}
       >
         <AboutUs></AboutUs>
@@ -97,7 +97,7 @@ function App() {
                     />
                   </Col>
                   <Col sm={{ size: 12 }}>
-                    <Button style={{ width: "100%" }}>
+                    <Button style={{ wsidth: "100%" }}>
                       Scentral Duftsuche
                     </Button>
                   </Col>
@@ -113,7 +113,7 @@ function App() {
                 <br />
                 <b className="alert-danger" style={{ fontSize: "1.2em" }}>
                   {" "}
-                  ACHTUNG WEGEN COVID19 VORÜBERGEHEND GESCHLOSSEN{" "}
+                  ACHTUNG WEGEN COV_id19 VORÜBERGEHEND GESCHLOSSEN{" "}
                 </b>
               </p>
             </ListGroupItem>
